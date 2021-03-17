@@ -1,0 +1,11 @@
+name: CV_builder
+
+on: [push]
+
+jobs:
+  myjob:
+    runs-on: ubuntu-18.04
+    steps:
+    - run: sudo docker build -t dsi/latex ./
+
+
